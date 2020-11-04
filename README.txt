@@ -1,0 +1,1 @@
+Day 1: Reviewing Node, following little tutorials and reading the documentation.
