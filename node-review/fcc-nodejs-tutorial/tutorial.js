@@ -1,26 +1,24 @@
-/* Working with Modules */
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.output,
+    propmt: 'OHAI> '
+});
 
-const sum = (num1, num2) => num1 + num2;
-const PI = 3.14;
-class SomeMathObject {
-    constructor() {
-        console.log('object created');
+rl.prompt();
+
+rl.on('line', (line) => {
+    switch (line.trim()) {
+        case 'hello':
+            console.log('world!');
+            break;
+        default:
+            console.log('Whaaaat?');
+            break;
     }
-}
 
-/*module.exports = {
-    sum,
-    PI,
-    SomeMathObject
-}*/
-
-
-module.exports =  exports =  { hola: 'hola'}
-exports.holi = 'holi';
-
-/*
-exports.sum = sum;
-exports.PI = PI;
-exports.SomeMathObject = SomeMathObject;
-module.exports.hey = 'hey';
-*/
+    rl.prompt();
+}).on('close', () => {
+    console.log('chauu');
+    process.exit(0);
+});

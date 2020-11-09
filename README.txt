@@ -1,2 +1,3 @@
 Day 1: Reviewing Node. I even wrote an article in Spanish about the difference between exports and module.exports
 Day 2: Reviewing events and read line in Node. 
+Day 3: I learnt about the readline module, read about the documentation about it and played a little to understand everything better.

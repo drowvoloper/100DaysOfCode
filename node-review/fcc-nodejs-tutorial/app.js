@@ -1,8 +1,33 @@
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-const EventEmitter = require('events');
-const eventEmitter = new EventEmitter();
+let num1 = Math.floor((Math.random() * 10) + 1);
+let num2 = Math.floor((Math.random() * 10) + 1);
+let answer = num1 + num2;
 
-eventEmitter.on('tutorial', function() { console.log('hey')});
-eventEmitter.on('nope', function() { console.log('nope')});
+rl.question(
+    `What is ${num1} + ${num2}?\n`,
+    (userInput) => {
+        if (userInput.trim() == answer) {
+            rl.close()
+        } else {
+            rl.setPrompt(`Nope :( try again\n${num1} + ${num2}\n`);
+            rl.prompt();
+            rl.on('line', (userInput) => {
+                if (userInput.trim() == answer) {
+                    rl.close();
+                } else {
+                    rl.setPrompt(`Nope :( try again\n${num1} + ${num2}\n`);
+                    rl.prompt();
+                }
+            })
+        } 
+    }
+);
 
-console.log(eventEmitter.getMaxListeners());
+rl.on('close', () => {
+    console.log('Correct!!!');
+});
