@@ -5,4 +5,4 @@ Day 4: Yep.. Node review! I started a little D&D Character Creator
 Day 5: Node js!
 Day 6: Node js!
 Day 7: Still Node js!
-Day 8: D&D Character Creator
+Day 8: Codewars, hashtag generator
