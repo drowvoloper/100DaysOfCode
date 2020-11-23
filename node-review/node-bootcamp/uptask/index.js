@@ -3,6 +3,9 @@ const routes = require('./routes');
 const path = require('path');
 const bodyParser = require('body-parser');
 
+// Helpers
+const helpers = require('./helpers');
+
 // Crear la conexión a la BBDD
 const db = require('./config/db');
 
@@ -24,6 +27,15 @@ app.set('view engine', 'pug');
 
 // Añadir la carpeta de las vistas
 app.set('views', path.join(__dirname, './views'));
+
+// Pasar var dump a la aplicacion
+app.use((req, res, next) => {
+    // res.locals nos permite crear variables
+    // que pueden ser utilizadas en el resto de
+    // tu aplicación
+    res.locals.vardump = helpers.vardump;
+    next();
+});
 
 // habilitar body parser
 app.use(bodyParser.urlencoded({extended: true}));
