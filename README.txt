@@ -10,3 +10,4 @@ Day 9: Node login system
 Day 10: Node Bootcamp
 Day 11: Node Bootcamp
 Day 12: Node Bootcamp
+Day 13: My first single-div CSS drawing (following a tutorial) + Node Bootcamp

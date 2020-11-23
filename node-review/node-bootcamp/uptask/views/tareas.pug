@@ -4,9 +4,29 @@ block contenido
     .contenido-principal
         h2 #{nombrePagina} - #{proyecto.nombre}
 
-        // TODO - Formulario
+        // formulario para agregar tarea
+        form.agregar-tarea(action=`/proyectos/${proyecto.url}` method="POST")
+            .campo
+                label(for="tarea") Tarea:
+                input.nombre-tarea(type="text" name="tarea" placeholder="Nombre tarea")
+                input.boton.nueva-tarea(type="submit" value="Agregar")
 
-        // TODO - Listado Pendientes
+        // lista de tareas pendientes
+        .listado-pendientes
+            ul
+                if(tareas.length)
+                    each tarea in tareas
+                        li.tarea(data-tarea=tarea.id)
+                            p= tarea.tarea
+                            .acciones
+                                if tarea.estado
+                                    i.far.fa-check-circle.completo
+                                else
+                                    i.far.fa-check-circle
+                                i.fas.fa-trash
+                else
+                    p No hay tareas todavía en este proyecto
+
 
         // Acciones
         .contenedor-acciones
