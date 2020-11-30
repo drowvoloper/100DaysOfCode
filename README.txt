@@ -13,3 +13,5 @@ Day 12: Node Bootcamp
 Day 13: My first single-div CSS drawing (following a tutorial) + Node Bootcamp
 Day 14: I submitted my first CSS Battle challenge. It could be improved a lot, but I am happy how this turned out.
 Day 15: Codewars "Pagination Helper" kata
+Day 16: Node Bootcamp!
+
