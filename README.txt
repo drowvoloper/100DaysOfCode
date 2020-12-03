@@ -16,3 +16,4 @@ Day 15: Codewars "Pagination Helper" kata
 Day 16: Node Bootcamp!
 Day 17: Project Euler (problem 11) and JavaScriptmas
 Day 18: JavaScriptmas
+Day 19: Completed Project Euler (problem 11) and JavaScriptmas
