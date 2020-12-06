@@ -18,3 +18,4 @@ Day 17: Project Euler (problem 11) and JavaScriptmas
 Day 18: JavaScriptmas
 Day 19: Completed Project Euler (problem 11) and JavaScriptmas
 Day 20: JavaScriptmas!
+Day 21: JavaScriptmas, codewars
