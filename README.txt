@@ -20,3 +20,4 @@ Day 19: Completed Project Euler (problem 11) and JavaScriptmas
 Day 20: JavaScriptmas!
 Day 21: JavaScriptmas, codewars
 Day 22: JavaScriptmas!! CSS Battle #63
+Day 23: JavaScriptmas
